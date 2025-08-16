@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karriere | LUNG Lufttechnische Anlagen GmbH</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #1f4d89 0%, #3b82f6 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .job-card {
+            transition: all 0.3s ease;
+        }
+        
+        .job-card:hover {
+            border-left: 4px solid #3b82f6;
+        }
+        
+        .filter-btn {
+            transition: all 0.2s ease;
+        }
+        
+        .filter-btn.active {
+            background-color: #3b82f6;
+            color: white;
+        }
+        
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .scroll-reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <img src="small_logo.jpg" alt="LUNG Logo" class="w-10 h-10 object-contain">
+                    <span class="font-bold text-xl text-gray-800">LUNG Lufttechnische Anlagen GmbH</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-gray-600 hover:text-[#1f4d89] transition">Jobs</a>
+                    <a href="#" class="text-gray-600 hover:text-[#1f4d89] transition">Kultur</a>
+                    <a href="#" class="text-gray-600 hover:text-[#1f4d89] transition">Benefits</a>
+                    <a href="#" class="text-gray-600 hover:text-[#1f4d89] transition">Team</a>
+                    <a href="#" class="text-gray-600 hover:text-[#1f4d89] transition">FAQ</a>
+                </div>
+                <a href="initiativbewerbung.html" class="bg-[#1f4d89] text-white px-6 py-2 rounded-lg hover:bg-[#3b82f6] transition">
+                    Bewerben
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 scroll-reveal">
+                Gestalte die Zukunft mit uns
+            </h1>
+            <p class="text-xl mb-10 max-w-2xl mx-auto scroll-reveal">
+                Werde Teil eines innovativen Teams, das Technologie und Kreativität vereint, um die Welt zu verändern.
+            </p>
+            <div class="max-w-2xl mx-auto relative scroll-reveal">
+                <input type="text" placeholder="Stellentitel, Standort oder Abteilung..." 
+                    class="w-full px-6 py-4 rounded-full text-gray-800 text-lg focus:outline-none focus:ring-4 focus:ring-[#a8c7fa]">
+                <button class="absolute right-2 top-2 bg-[#1f4d89] text-white px-6 py-2 rounded-full hover:bg-[#3b82f6] transition">
+                    <i class="fas fa-search mr-2"></i>Suchen
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Openings -->
+    <section id="jobs" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 scroll-reveal">Aktuelle Stellenangebote</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Job Card 1 -->
+                <div class="job-card bg-white rounded-xl shadow-md p-6 border-l-4 border-transparent card-hover scroll-reveal">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">Konstrukteur, Technischer Zeichner, Technischer Produktdesigner (m/w/d)</h3>
+                            <p class="text-[#1f4d89]">Technik / Konstruktion</p>
+                        </div>
+                        <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Vollzeit</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Erstellung von technischen Zeichnungen und Konstruktionen für unsere lufttechnischen Anlagen.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">CAD</span>
+                        <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Konstruktion</span>
+                        <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Home-Office möglich</span>
+                    </div>
+                    <a href="cad-zeichner.html" class="text-[#1f4d89] font-medium hover:text-[#3b82f6] transition">
+                        Mehr erfahren <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+                
+                <!-- Job Card 2 -->
+                <div class="job-card bg-white rounded-xl shadow-md p-6 border-l-4 border-transparent card-hover scroll-reveal">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">Monteur für Lüftungsanlagen / Wartungstechniker (m/w/d)</h3>
+                            <p class="text-[#1f4d89]">Montage / Service</p>
+                        </div>
+                        <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Vollzeit</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Montage, Wartung und Instandhaltung von lufttechnischen Anlagen bei unseren Kunden vor Ort.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Handwerk</span>
+                        <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Reisebereitschaft</span>
+                        <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Service</span>
+                    </div>
+                    <a href="monteur.html" class="text-[#1f4d89] font-medium hover:text-[#3b82f6] transition">
+                        Mehr erfahren <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+                
+                <!-- Job Card 3 -->
+                <div class="job-card bg-white rounded-xl shadow-md p-6 border-l-4 border-transparent card-hover scroll-reveal">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">Projektleiter / Technischer Vertrieb (m/w/d)</h3>
+                            <p class="text-[#1f4d89]">Vertrieb / Projektmanagement</p>
+                        </div>
+                        <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Vollzeit</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Technische Beratung, Angebotserstellung und Abwicklung von Kundenprojekten.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Vertrieb</span>
+                        <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Projektmanagement</span>
+                        <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Kundenkontakt</span>
+                    </div>
+                    <a href="projektleiter.html" class="text-[#1f4d89] font-medium hover:text-[#3b82f6] transition">
+                        Mehr erfahren <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Job Card 4 -->
+                <div class="job-card bg-white rounded-xl shadow-md p-6 border-l-4 border-transparent card-hover scroll-reveal">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">Produktions- / Montagehelfer (m/w/d)</h3>
+                            <p class="text-[#1f4d89]">Produktion / Montage</p>
+                        </div>
+                        <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Vollzeit</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Unterstützung bei der Fertigung und Montage unserer Anlagen.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Handwerkliches Geschick</span>
+                        <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Teamplayer</span>
+                    </div>
+                    <a href="produktionshelfer.html" class="text-[#1f4d89] font-medium hover:text-[#3b82f6] transition">
+                        Mehr erfahren <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Job Card 5 -->
+                <div class="job-card bg-white rounded-xl shadow-md p-6 border-l-4 border-transparent card-hover scroll-reveal">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">Maschinenbediener (m/w/d)</h3>
+                            <p class="text-[#1f4d89]">Produktion</p>
+                        </div>
+                        <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Vollzeit</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Bedienung und Einrichtung unserer modernen Maschinen und Anlagen.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Maschinenführung</span>
+                        <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Qualitätskontrolle</span>
+                    </div>
+                    <a href="maschinenbediener.html" class="text-[#1f4d89] font-medium hover:text-[#3b82f6] transition">
+                        Mehr erfahren <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Job Card 6 -->
+                <div class="job-card bg-white rounded-xl shadow-md p-6 border-l-4 border-transparent card-hover scroll-reveal">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">Metallbauer / Schlosser / Schweißer (m/w/d)</h3>
+                            <p class="text-[#1f4d89]">Produktion</p>
+                        </div>
+                        <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Vollzeit</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Herstellung von Metallkonstruktionen für unsere lufttechnischen Anlagen.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Schweißen</span>
+                        <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Metallbau</span>
+                    </div>
+                    <a href="metallbauer.html" class="text-[#1f4d89] font-medium hover:text-[#3b82f6] transition">
+                        Mehr erfahren <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 scroll-reveal">Warum LUNG Lufttechnische Anlagen GmbH?</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center scroll-reveal">
+                    <div class="w-16 h-16 bg-[#e0e8f9] rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-lightbulb text-[#1f4d89] text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Innovative Kultur</h3>
+                    <p class="text-gray-600">Wir fördern kreative Lösungen und geben dir die Freiheit, neue Wege zu gehen.</p>
+                </div>
+                
+                <div class="text-center scroll-reveal">
+                    <div class="w-16 h-16 bg-[#e0e8f9] rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-[#1f4d89] text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Talentiertes Team</h3>
+                    <p class="text-gray-600">Arbeite mit den besten Köpfen der Branche und lerne voneinander.</p>
+                </div>
+                
+                <div class="text-center scroll-reveal">
+                    <div class="w-16 h-16 bg-[#e0e8f9] rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-chart-line text-[#1f4d89] text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Wachstum</h3>
+                    <p class="text-gray-600">Entfalte dein volles Potenzial mit gezielten Entwicklungsprogrammen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 scroll-reveal">Unsere Benefits</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover scroll-reveal">
+                    <div class="text-[#1f4d89] text-3xl mb-4">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Flexible Arbeitsmodelle</h3>
+                    <p class="text-gray-600">Home-Office, Remote oder im Büro - du entscheidest.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover scroll-reveal">
+                    <div class="text-[#1f4d89] text-3xl mb-4">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Weiterbildung</h3>
+                    <p class="text-gray-600">Budget für Konferenzen, Kurse und Zertifizierungen.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover scroll-reveal">
+                    <div class="text-[#1f4d89] text-3xl mb-4">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Gesundheit</h3>
+                    <p class="text-gray-600">Private Krankenversicherung und Fitness-Studio-Zuschuss.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover scroll-reveal">
+                    <div class="text-[#1f4d89] text-3xl mb-4">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Verpflegung</h3>
+                    <p class="text-gray-600">Kostenlose Getränke, Snacks und Mittagessen im Büro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 scroll-reveal">Unser Team</h2>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center scroll-reveal">
+                    <img src="https://picsum.photos/seed/team1/150/150.jpg" alt="Teammitglied" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="font-semibold">Sarah Müller</h3>
+                    <p class="text-gray-600 text-sm">CTO</p>
+                </div>
+                
+                <div class="text-center scroll-reveal">
+                    <img src="https://picsum.photos/seed/team2/150/150.jpg" alt="Teammitglied" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="font-semibold">Markus Weber</h3>
+                    <p class="text-gray-600 text-sm">Lead Designer</p>
+                </div>
+                
+                <div class="text-center scroll-reveal">
+                    <img src="https://picsum.photos/seed/team3/150/150.jpg" alt="Teammitglied" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="font-semibold">Julia Hoffmann</h3>
+                    <p class="text-gray-600 text-sm">Product Manager</p>
+                </div>
+                
+                <div class="text-center scroll-reveal">
+                    <img src="https://picsum.photos/seed/team4/150/150.jpg" alt="Teammitglied" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="font-semibold">Thomas Bauer</h3>
+                    <p class="text-gray-600 text-sm">Senior Developer</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="text-[#1f4d89] font-medium hover:text-[#3b82f6] transition">
+                    Alle Teammitglieder kennenlernen <i class="fas fa-arrow-right ml-1"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <h2 class="text-3xl font-bold text-center mb-12 scroll-reveal">Häufig gestellte Fragen</h2>
+            
+            <div class="space-y-4">
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden scroll-reveal">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center faq-toggle">
+                        <span class="font-medium">Welche Produkte und Dienstleistungen bietet die LUNG GmbH an?</span>
+                        <i class="fas fa-chevron-down text-[#1f4d89] transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-gray-600">Die LUNG GmbH ist spezialisiert auf lufttechnische Anlagen. Unser Portfolio umfasst Absaug- und Filteranlagen, Oberflächentechnik, Lackier- und Beschichtungskabinen sowie energieeffiziente Wärmerückgewinnungssysteme. Wir bieten zudem umfassende Service- und Wartungsdienstleistungen für unsere eigenen und fremde Anlagen an.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden scroll-reveal">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center faq-toggle">
+                        <span class="font-medium">In welchen Branchen ist die LUNG GmbH tätig?</span>
+                        <i class="fas fa-chevron-down text-[#1f4d89] transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-gray-600">Wir sind in einer Vielzahl von Branchen tätig, darunter die holzverarbeitende Industrie, die Metallindustrie, die Papier- und Kunststoffverarbeitung sowie in der Oberflächen- und Lackiertechnik. Unsere Lösungen sind branchenübergreifend anpassbar.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden scroll-reveal">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center faq-toggle">
+                        <span class="font-medium">Wie sieht der Bewerbungsprozess bei der LUNG GmbH aus?</span>
+                        <i class="fas fa-chevron-down text-[#1f4d89] transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-gray-600">Unser Bewerbungsprozess ist unkompliziert. Nach Eingang Ihrer Bewerbung prüfen wir Ihre Unterlagen sorgfältig. Bei passender Qualifikation laden wir Sie zu einem persönlichen Gespräch ein, um uns gegenseitig kennenzulernen. Je nach Position kann ein zweites Gespräch oder ein Probearbeiten folgen.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6 scroll-reveal">Bereit, Teil unseres Teams zu werden?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto scroll-reveal">
+                Schicke uns deine Bewerbung und lass uns gemeinsam Großes erreichen!
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center scroll-reveal">
+                <a href="#jobs" class="bg-white text-[#1f4d89] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                    Offene Stellen ansehen
+                </a>
+                <a href="initiativbewerbung.html" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-[#1f4d89] transition">
+                    Initiativbewerbung
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="Logo_small_weiss.jpg" alt="LUNG Logo" class="w-8 h-8 object-contain">
+                        <span class="font-bold text-xl">LUNG Lufttechnische Anlagen GmbH</span>
+                    </div>
+                    <p class="text-gray-400">Innovation durch Technologie und Kreativität.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Unternehmen</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Über uns</a></li>
+                        <li><a href="#" class="hover:text-white transition">Karriere</a></li>
+                        <li><a href="#" class="hover:text-white transition">Presse</a></li>
+                        <li><a href="#" class="hover:text-white transition">Kontakt</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Ressourcen</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition">Dokumentation</a></li>
+                        <li><a href="#" class="hover:text-white transition">Support</a></li>
+                        <li><a href="#" class="hover:text-white transition">API</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Folge uns</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 LUNG Lufttechnische Anlagen GmbH. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll reveal animation
+        function revealOnScroll() {
+            const reveals = document.querySelectorAll('.scroll-reveal');
+            
+            reveals.forEach(element => {
+                const windowHeight = window.innerHeight;
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < windowHeight - elementVisible) {
+                    element.classList.add('active');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll(); // Initial check
+        
+        // FAQ toggle
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+        
+        // Filter buttons
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                button.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
